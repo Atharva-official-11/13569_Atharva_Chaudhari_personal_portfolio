@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Atharva Chaudhari, a MERN Stack Developer and Open Source Enthusiast.">
+    <meta name="keywords"
+        content="Atharva Chaudhari, MERN Stack Developer, Web Applications, UI/UX Designs, Open Source">
+    <link rel="shortcut icon" href="./resources/images/name-logo-black.svg" type="image/x-icon">
+    <title>Atharva Chaudhari | Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="nav-bar dark-mode1" id="navv">
+        <div class="logo">
+            <img src="./resources/icons/name-logo.svg" alt="Atharva Chaudhari Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="dark-mode-toggle" aria-label="Toggle dark mode">🌙</button>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <p>Atharva Chaudhari</p>
+        <h1>I Build Awesome <br> <span class="gradient-text">Web Applications</span> <span class="cursor">|</span></h1>
+        <p>Hi, I'm Atharva Chaudhari, a MERN Stack Developer </p>
+            <span> and Open Source Enthusiast.</span>
+        <div class="btn">
+            <a href="./resources/Atharva_Chaudhari_SDE.pdf" download="Atharva_Chaudhari_SDE.pdf" class="button">Download CV →</a>
+            <a href="#about" class="button">See my work →</a>
+        </div>
+    </section>
+
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+        
+        <a target="_blank" title="Linkedin" href="https://www.linkedin.com/in/atharva-chaudhari1131" aria-label="LinkedIn"><img src="./resources/icon/linkedin_link.png" alt="LinkedIn"></a>
+        <a target="_blank" title="Twitter" href="#" aria-label="Twitter"><img src="./resources/icon/twitter_trail.png" alt="Twitter" style="border-radius: 10px;"></a>
+        <a target="_blank" title="Instagram" href="#" aria-label="Instagram"><img src="./resources/icon/instagram.png" alt="Instagram"></a>
+        <a target="_blank" title="Email" href="mailto:workwithatharvaa@gmail.com?subject=Hello&body=This is a message" aria-label="Email"><img src="./resources/icon/email.png" alt="Email"></a>
+        <a target="_blank" title="Github" href="https://github.com/Atharva-Chaudhari-11" aria-label="Github"><img src="./resources/images/github-mark.svg" alt="Github"></a>
+    </div>
+
+
+
+    <!-- about page  -->
+
+    <section class="grid-container" id="about">
+        <h2 class="subheading">About me </h2>
+        <div class="gallery ">
+            <div class="box box-1">
+                <h4>
+                    I prioritize open communication with my clients for the best quality results
+                </h4>
+            </div>
+            <div class="box box-2">
+                <h4>
+                    Flexibility is my promise
+                </h4>
+            </div>
+            <div class="box box-3">
+                <h6>
+                    Are you hiring? <br> Check out
+                </h6>
+                <p>My Resume</p>
+                <br><br>
+                <a target="_blank" href="https://drive.google.com/file/d/1hujxUjDJx7gSliQLe8zhYnD_k3iyx_xX/view?usp=drive_link" class="resume-button">View Resume</a>
+            </div>
+            <div class="box box-4">
+                <h4>
+                    Tech enthusiast with a passion for development.
+                </h4>
+            </div>
+            <div class="box box-5">
+                <h6>Passionate about transforming ideas into reality:</h6> <br>
+                <p>
+                    <b>Clean Code and Modern Design</b>
+            </div>
+            </p>
+            <div class="box box-6">
+                <p>
+                    Do you want to start a project together?
+                </p>
+                <br><br>
+                <button class="email-button copy-email">Copy my email address</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- experience page -->
+
+    <section class="experience-section" id="work">
+        <h3 class="subheading">MY PROFESSIONAL JOURNEY</h3>
+        <h1 class="heading">Work Experience</h1>
+        <div class="experience-container">
+            <div class="sidebar">
+                <div class="job active" onclick="showJob(0)">
+                    <img src="./resources/work-img/careerphi_logo.jpg" alt="Wonderland Logo">
+                    <span>CareerPhi - Full Stack developer Intern</span>
+                </div>
+                <div class="job" onclick="showJob(1)">
+                    <img src="./resources/work-img/yhills_logo.jpg" alt="Mackenzie Health Logo">
+                    <span>YHills - Artificial Intelligence Intern</span>
+                </div>
+                <div class="job " onclick="showJob(2)">
+                    <img src="./resources/work-img/sahutechnologies_logo.jpg" alt="Wonderland Logo">
+                    <span>Sahu Technologies - Android App Developer Intern</span>
+                </div>
+                <div class="job" onclick="showJob(3)">
+                    <img src="./resources/work-img/sahutechnologies_logo.jpg" alt="Staples Logo">
+                    <span>Sahu Technologies - Web Development Intern</span>
+                </div>
+            </div>
+            <div class="job-details">
+                <div class="job-description active">
+                    <h2>CareerPhi  - Full Stack developer Intern</h2>
+                    <h4>Full Stack developer Intern</h4>
+                    <p>Sep 2024 - Jan 2025</p>
+                    <ul>
+                        <li>Contributed to the development of a real-time application using the MERN stack, managing user data with MongoDB.</li>
+                        <li>Integrated Cloudinary for efficient media storage and retrieval, enhancing application performance and reducing load
+                            times by 5%.</li>
+                        <li>Contributed to the development of a real-time application using the MERN stack, managing user data with MongoDB.</li>
+                    </ul>
+                </div>
+                <div class="job-description ">
+                    <h2>YHills</h2>
+                    <h4>Artificial Intelligence Intern</h4>
+                    <p> Jun 2023 – Aug 2023</p>
+                    <ul>
+                        <li >Built and deployed machine learning models using advanced algorithms, boosting prediction accuracy by X%.</li>
+                        <li>Collaborated with cross-functional teams to identify key data patterns and optimize model performance, delivering
+                            actionable insights for business growth.
+                            </li>
+                        <li >Built and deployed machine learning models using advanced algorithms, boosting prediction accuracy by X%.</li>
+                    </ul>
+                </div>
+                <div class="job-description">
+                    <h2>Sahu Technologies</h2>
+                    <h4>Android App Developer Intern</h4>
+                    <p>Dec 2022 - Feb 2023</p>
+                    <ul>
+                        <li>Enhanced the frontend of a mobile application for Android using Java and Google Firebase for seamless user data
+                            management</li>
+                        <li>Utilized Android Studio for testing and visualizing the application across both Android platforms</li>
+                    </ul>
+                </div>
+                <div class="job-description">
+                    <h2>Sahu Technologies</h2>
+                    <h4>Web Development Intern</h4>
+                    <p>Jun 2022 – Aug 2022</p>
+                    <ul>
+                        <li>Designed a mobile-responsive e-commerce interface using HTML, Tailwind CSS, JavaScript, and MySQL, improving user
+                            accessibility across devices.</li>
+                        <li>Implemented a secure user authentication system, improving data security and user trust, while optimizing front-end
+                            performance to reduce page load time by 10%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skills page  -->
+
+    <section class="skills-section" id="skills">
+        <!-- 1st div -->
+        <h3 class="subheading">TECHNICAL PROFICIENCIES</h3>
+        <h1 class="subheading">Skills</h1>
+        <p class="code-tag">&lt;programming&gt;</p>
+        <br><br>
+        <div class="hexagon-container">
+            <div class="hexagon"><img src="./resources/skiils-icons/python.png" alt="Python"></div>
+            <div class="hexagon"><img src="./resources/skiils-icons/java.png" alt="Java"></div>
+            <div class="hexagon active"><img src="./resources/skiils-icons/node.svg" alt="node"></div>
+            <div class="hexagon active"><img src="./resources/skiils-icons/letter-c.png" alt="C"></div>
+            <div class="hexagon active"><img src="./resources/skiils-icons/icons8-css-48.png" alt="CSS"></div>
+            <div class="hexagon"><img src="./resources/skiils-icons/js.png" alt="JavaScript"></div>
+            <div class="hexagon"><img src="./resources/skiils-icons/express.svg" alt="Express"></div>
+            <div class="hexagon"><img src="./resources/skiils-icons/icons8-html-48.png" alt="Html"></div>
+            <div class="hexagon"><img src="./resources/skiils-icons/Tailwind CSS.png" alt="Tailwind CSS"></div>
+            <div class="hexagon"><img src="./resources/skiils-icons/react.svg" alt="React"></div>
+            <div class="hexagon"><img src="./resources/skiils-icons/cube.png" alt="Solidity"></div>
+            <div class="hexagon"><img src="./resources/skiils-icons/mongodb.svg" alt="MongoDB"></div>
+        </div>
+        <br><br>
+        <p class="code-tag closing">&lt;/programming&gt;</p>
+
+
+        <!-- 2nd div -->
+        <p class="code-tag">&lt;Tools&gt;</p>
+        <br><br>
+
+        <div class="hexagon-container">
+            <div class="hexagon"><img src="./resources/icons/github.svg" alt="github"></div>
+            <div class="hexagon"><img src="./resources/skiils-icons/icons8-android-studio-96.png" alt="Android-Studio">
+            </div>
+            <div class="hexagon active"><img src="./resources/skiils-icons/icons8-anaconda-48.png" alt="Anaconda"></div>
+            <div class="hexagon"><img src="./resources/skiils-icons/icons8-power-bi-2021-48.png" alt="PowerBi"></div>
+            <div class="hexagon"><img src="./resources/skiils-icons/icons8-visual-studio-code-48.png" alt="VSCode">
+            </div>
+            <div class="hexagon"><img src="./resources/skiils-icons/icons8-intellij-idea-96.png" alt=" IntelliJ-IDEA">
+            </div>
+        </div>
+        <br><br>
+
+        <p class="code-tag closing">&lt;/Tools&gt;</p>
+
+
+        <!-- 3rd div -->
+        <p class="code-tag">&lt;operatingSystem&gt;</p>
+        <br><br>
+
+        <div class="hexagon-container">
+            <div class="hexagon"><img src="./resources/skiils-icons/microsoft.png" alt="windows"></div>
+            <div class="hexagon"><img src="./resources/skiils-icons/icons8-linux-26.png" alt="linux"></div>
+        </div>
+        <br><br>
+
+        <p class="code-tag closing">&lt;/operatingSystem&gt;</p>
+    </section>
+
+
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="subheading" id="project">My Projects</h2>
+        <div class="projects-grid ">
+            <div class="project-card project-cards" id="bg-cards" title="Banking Dashboard">
+                <img src="./resources/projects-images/banking.png" alt="Project 1">
+                <h3>Banking Dashboard</h3>
+                <p>Designed and developed an interactive Banking Dashboard to provide users with real-time financial
+                    insights. The dashboard features:
+                    User Account Overview,Transaction Management,Data Visualization,Responsive UI.
+
+                </p>
+                <a href="https://github.com/Atharva-Chaudhari-11/CareerPhi_projects/tree/main/01_Banking_Dashboard_sbi">View
+                    Project →</a>
+            </div>
+
+            <div class="project-card  project-cards "  id="bg-cards" title="TextBridge">
+                <img src="./resources/projects-images/textbridge.jpg" alt="Project 2">
+                <h3>TextBridge</h3>
+                <p>Developed a PDF translation tool to convert documents from Marathi to English and other languages
+                    using NLP techniques.</p>
+                <a href="https://github.com/Atharva-Chaudhari-11/PDF-Language-Translation">View Project →</a>
+            </div>
+
+            <div class="project-card  project-cards" id="bg-cards" title="Tailwind Website">
+                <img src="./resources/projects-images/tailwind.png" alt="Project 3">
+                <h3>Tailwind Website</h3>
+                <p>Designed a dynamic news application that delivers real-time news updates with a user-friendly
+                    interface.</p>
+                <a href="https://github.com/Atharva-Chaudhari-11/TailWind_project?tab=readme-ov-file">View Project →</a>
+            </div>
+
+            <div class="project-card  project-cards" id="bg-cards" title="Investment Portfolio Tracker">
+                <img src="./resources/projects-images/investment.png" alt="Project 4">
+                <h3>Investment Portfolio Tracker</h3>
+                <p>Developed an Investment Portfolio Tracker to help users monitor and analyze their investments
+                    efficiently. </p>
+                <a
+                    href="https://github.com/Atharva-Chaudhari-11/CareerPhi_projects/tree/main/02_InvestMent_tracking_Portfolio">View
+                    Project →</a>
+            </div>
+            <div class="project-card project-cards" id="bg-cards" title="Fyle Clone">
+                <img src="./resources/projects-images/fyn.png" alt="Project 4">
+                <h3>Fyle Clone</h3>
+                <p>Developed an Investment Portfolio Tracker to help users monitor and analyze their investments
+                    efficiently. </p>
+                <a href="https://github.com/Atharva-Chaudhari-11/Fyle-Assignment?tab=readme-ov-file">View Project →</a>
+            </div>
+            <div class="project-card project-cards" id="bg-cards" title="Decentralized Google Drive">
+                <img src="./resources/projects-images/google_drive.jpg" alt="Project 4">
+                <h3>Decentralized Google Drive</h3>
+                <p>Built a Decentralized Google Drive that enables secure and private file storage using blockchain
+                    technology. </p>
+                <a href="https://github.com/Atharva-Chaudhari-11/DecentralizedGoogleDrive">View Project →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact page -->
+    <section id="back-bg1" id="contact">
+     
+        <h1 class="subheading2 last-h1" id="back-bg2 back-bg1 contact">Contact Me </h1>
+        <div id="back-bg1"> 
+        <div class="contact-page " >
+            <div class="contact-container">
+                <h3 class="subheading1">
+                    GET IN TOUCH
+                    <span class="phone">📞 <a href="tel:9588601833">9588601833</a></span>
+                </h3>
+                <h1 class="heading">Contact<span class="dot">.</span></h1>
+
+                <form  action="https://api.web3forms.com/submit" method="POST"  novalidate id="contact-form">
+
+                    <input type="hidden" name="access_key" value="b352b56b-3182-4a0f-86f6-e8675284cd41">
+
+                    <div class="input-group">
+                        <label for="name"><i class="fas fa-user"></i> Name</label>
+                        <input type="text" id="name" placeholder="Your name" required />
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="email" placeholder="Your email" required />
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message"><i class="fas fa-comment-dots"></i> Message</label>
+                        <textarea id="message" rows="4" placeholder="Your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="send-btn">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="profile-card">
+                <div class="h-link">
+                    <img class="linkedin-img" src="./resources/icon/linkedin.png" alt="">
+                </div>
+                <img class="personal-img" src="./resources/images/personal.jpg" alt="">
+                <div class="profile-header">
+                    <h1>Atharva Chaudhari</h1>
+                    <h2>BE Computer Engineering @ Pillai College of Engineering </h2>
+                    <h2>
+                        Mumbai University</h2>
+                </div>
+                <div class="profile-details">
+                    <p>Traine Software Engineer</p>
+                    <p>NeoSOFT (CMMI 5 Level Company) </p>
+                </div>
+                <a href="https://www.linkedin.com/in/atharva-chaudhari1131" target="_blank" class="v-btn">View Profile</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <footer>
+        <div class="foot">
+            <img src="./resources/images/name-logo-favicon.svg" alt="">
+            <p>Atharva C Companies Limited</p>
+        </div>
+        <p>© 2025 Atharva Chaudhari, Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="./script/script.js"></script>
+    <!-- script - email -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!-- skiils trail -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       
+        .skills-section {
+            text-align: center;
+        }
+        .subheading {
+            font-size: 14px;
+            letter-spacing: 2px;
+            color: #aaa;
+        }
+       
+        .hexagon-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .hexagon {
+            width: 100px;
+            height: 110px;
+            background-color: #1a1a1a;
+            clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s;
+        }
+        .hexagon img {
+            max-width: 50%;
+            max-height: 50%;
+        }
+        .hexagon:hover {
+            background-color: #6c5ce7;
+            box-shadow: 0 0 15px #6c5ce7;
+        }
+        .code-tag {
+            font-family: monospace;
+            color: #6c5ce7;
+            margin-top: 30px;
+            text-align: left;
+        }
+        .closing {
+            color: #3498db;
+            text-align: end;
+        }
+    </style>
+</head>
+<body>
+    <section class="skills-section">
+        <!-- 1st div -->
+        <h3 class="subheading">TECHNICAL PROFICIENCIES</h3>
+        <p class="code-tag">&lt;programming&gt;</p>
+        <div class="hexagon-container">
+            <div class="hexagon"><img src="python.png" alt="Python"></div>
+            <div class="hexagon"><img src="java.png" alt="Java"></div>
+            <div class="hexagon active"><img src="cpp.png" alt="C++"></div>
+            <div class="hexagon"><img src="javascript.png" alt="JavaScript"></div>
+            <div class="hexagon"><img src="typescript.png" alt="TypeScript"></div>
+            <div class="hexagon"><img src="docker.png" alt="Docker"></div>
+            <div class="hexagon"><img src="tailwind.png" alt="Tailwind CSS"></div>
+            <div class="hexagon"><img src="react.png" alt="React"></div>
+            <div class="hexagon"><img src="postgresql.png" alt="PostgreSQL"></div>
+            <div class="hexagon"><img src="mongodb.png" alt="MongoDB"></div>
+        </div>
+        <p class="code-tag closing">&lt;/programming&gt;</p>
+       
+
+        <!-- 2nd div -->
+        <p class="code-tag">&lt;Tools&gt;</p>
+        <div class="hexagon-container">
+            <div class="hexagon"><img src="python.png" alt="Python"></div>
+            <div class="hexagon"><img src="java.png" alt="Java"></div>
+            <div class="hexagon active"><img src="cpp.png" alt="C++"></div>
+            <div class="hexagon"><img src="javascript.png" alt="JavaScript"></div>
+            <div class="hexagon"><img src="typescript.png" alt="TypeScript"></div>
+            <div class="hexagon"><img src="docker.png" alt="Docker"></div>
+            <div class="hexagon"><img src="tailwind.png" alt="Tailwind CSS"></div>
+            <div class="hexagon"><img src="react.png" alt="React"></div>
+            <div class="hexagon"><img src="postgresql.png" alt="PostgreSQL"></div>
+            <div class="hexagon"><img src="mongodb.png" alt="MongoDB"></div>
+        </div>
+        <p class="code-tag closing">&lt;/Tools&gt;</p>
+
+
+        <!-- 3rd div -->
+        <p class="code-tag">&lt;contentProduction&gt;</p>
+        <div class="hexagon-container">
+            <div class="hexagon"><img src="python.png" alt="Python"></div>
+            <div class="hexagon"><img src="java.png" alt="Java"></div>
+        </div>
+        <p class="code-tag closing">&lt;/contentProduction&gt;</p>
+    </section>
+   
+</body>
+</html>
