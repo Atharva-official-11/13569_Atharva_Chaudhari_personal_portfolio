@@ -11,6 +11,7 @@ body {
   background-color: #0a0a0a;
   color: white;
   transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+
 }
 /* add to each section */
 .main-margin{
@@ -902,12 +903,24 @@ ul {
   }
 }
 
-@media (max-width: 400px){
+@media (max-width: 500px){
   body{
-    margin-left: 42px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
     /* margin-right: 8px; */
   };
+  .hero{
+    margin-left: 17%;
+  }
   .experience-section{
     text-align: start;
   }
+  .grid-container{
+    justify-content: center;
+    align-items: center;
+    margin-right: 25%;
+  }
+
 }
